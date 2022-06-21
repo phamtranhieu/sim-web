@@ -1,0 +1,24 @@
+.devide {
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to top left, #273241 50%, #9b2724 50%);
+}
+
+.button-arrow {
+	position: absolute;
+	top: 117px;
+	right: 64px;
+	&-title {
+		position: relative;
+		top: 90px;
+		left: 38px;
+	}
+	&-text {
+		position: relative;
+		transform: rotate(-90deg);
+		top: 45px;
+		color: rgba(255, 255, 255, 0.8);
+	}
+}
