@@ -1,0 +1,50 @@
+.label-email {
+	margin-top: 52px;
+	padding-bottom: 12px;
+	.ant-form-item-required {
+		width: 376px !important;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	input {
+		background-color: #f6f6f6;
+	}
+}
+.label-password {
+	padding-bottom: 12px;
+	.ant-form-item-required {
+		width: 376px !important;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	input {
+		background-color: #f6f6f6;
+	}
+}
+.label-confirm-password {
+	padding-bottom: 12px;
+	.ant-form-item-required {
+		width: 376px !important;
+		height: 24px;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	input {
+		background-color: #f6f6f6;
+	}
+}
+.button-submit {
+	button {
+		width: 100%;
+		height: 48px;
+		background-color: #ff4b5a;
+		font-weight: 600;
+		font-size: 18px;
+		border-radius: 8px;
+		margin-top: 40px;
+		margin-right: 0;
+		outline: none;
+	}
+}

@@ -16,11 +16,13 @@ import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { Button, Modal, BackTop } from 'antd';
 
 import Slider from '../Slider/Slider';
+import { useNavigate } from 'react-router-dom';
 
 import './Onboarding.scss';
 
 export default function Onboarding() {
 	const [isModalVisible, setIsModalVisible] = useState(false);
+	const navigate = useNavigate();
 	useEffect(() => {
 		showModal();
 	}, []);
@@ -43,13 +45,18 @@ export default function Onboarding() {
 						<img className="relative bottom-[29.17%] h-[10px] top-[29.17%]" src={arrow} alt="" />
 						<img className="w-[115.36px] h-[31.55px]" src={logo} alt="" />
 					</div>
-					<button className="absolute font-medium items-center bg-gray rounded-[100px] px-[36px] py-[10px] left-[1126px] w-[250px] h-[52px] top-[18px] font-sans">
+					<button
+						onClick={() => {
+							navigate('/login');
+						}}
+						className="absolute font-medium items-center bg-gray rounded-[100px] px-[36px] py-[10px] left-[1126px] w-[250px] h-[52px] top-[18px] font-sans"
+					>
 						Đăng nhập/ Đăng ký
 					</button>
 				</div>
 				<div className="content h-[788px] bg-primary relative">
 					<div className="absolute w-[774px] h-[48px] top-[28px] left-[333px] rounded-large border-2 border-border-white bg-white">
-						<input type="search" className="relative w-full py-2 px-5 outline-0" placeholder="Tìm số" />
+						<input type="search" className="relative w-full py-2 px-7 outline-0" placeholder="Tìm số" />
 						<img className="relative w-[13px] h-[13px] bottom-[26px] left-[4px]" src={find} />
 					</div>
 					<div className="absolute w-[1100px] h-[560px] top-[90px] left-[170px]">
@@ -132,18 +139,20 @@ export default function Onboarding() {
 							src={require('../../image/Screen Shot 2022-06-08 at 16.40 2.png')}
 							alt=""
 						/>
-						<div className="flex items-center w-[772px] mx-auto">
-							<img
-								className=" w-[72px] h-[2px] bg-[#565656] flex align-center "
-								src={require('../../asset/decuct.svg')}
-								alt=""
-							/>
-							<h3 className="m-0 my-3 ml-2">SIM SỐ ĐẸP THẾ HỆ MỚI</h3>
-						</div>
 
-						<h1 className="w-[772px] mx-auto h-[99px] font-normal text-[70px] text-primary font-[SVN-Sunflora] ">
-							Số đẹp như ý
-						</h1>
+						<div className="w-[772px] mx-auto h-[141px] mt-[20px]">
+							<div className="flex items-center w-[772px] mx-auto">
+								<img
+									className=" w-[72px] h-[2px] bg-[#565656] flex align-center "
+									src={require('../../asset/decuct.svg')}
+									alt=""
+								/>
+								<h3 className="m-0 my-3 ml-2">SIM SỐ ĐẸP THẾ HỆ MỚI</h3>
+							</div>
+							<h1 className="w-[772px] mx-auto my-0 leading-[77px] font-normal text-[70px] text-primary font-[SVN-Sunflora] ">
+								Số đẹp như ý
+							</h1>
+						</div>
 						<p className="w-[772px] mx-auto font-[SF Pro Text] font-normal text-base leading-7">
 							Theo dữ liệu của CoinMarketCap, giá Bitcoin tăng mạnh trong ngày 20/6 (theo giờ Việt Nam)
 							sau đợt bán tháo mạnh vào cuối tuần. Tính đến 17h, đồng tiền mã hóa lớn nhất thế giới được

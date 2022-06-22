@@ -1,3 +1,5 @@
+const { readBuilderProgram } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{html,js,ts,tsx,js,jsx}'],
@@ -11,6 +13,7 @@ module.exports = {
 			'white-mini': 'rgba(255, 255, 255, 0.6)',
 			white: '#FFFFFF',
 			'border-white': '#E6E8EC',
+			home: 'rgba(0,0,0,0.6)',
 		}),
 		borderRadius: {
 			none: '0',
@@ -63,6 +66,9 @@ module.exports = {
 			extrabold: '800',
 			black: '900',
 		},
+		// backgroundImage: {
+		// 	home: "url('./src/imageAuth/Screen Shot 2022-06-08 at 16.40 2.png')",
+		// },
 	},
 	plugins: [],
 };
