@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Onboarding from './pages/Onboarding/Onboarding';
+import Fan from './pages/Fan/Fan';
+import Class from './pages/Class/Class';
+import NumberIdol from './pages/NumberIdol/NumberIdol';
+
 import Authenticate from './pages/Authenticate/Authenticate';
 import Register from './pages/Register/Register';
 import ConfirmRegister from './pages/ConfirmRegister/ConfirmRegister';
@@ -21,6 +25,11 @@ root.render(
 		<BrowserRouter>
 			<Routes>
 				<Route index element={<Onboarding />} />
+
+				<Route path="/number-idol" element={<NumberIdol />} />
+				<Route path="/fan" element={<Fan />} />
+				<Route path="/class" element={<Class />} />
+
 				<Route path="/login" element={<Authenticate />} />
 				<Route path="/register" element={<Register />} />
 				<Route path="/confirm-register" element={<ConfirmRegister />} />
@@ -28,7 +37,9 @@ root.render(
 					<Route path="set" element={<SetPassword />} />
 					<Route path="confirm" element={<ConfirmPassword />} />
 				</Route>
+
 				<Route path="/home" element={<Home />} />
+
 				<Route path="/order" element={<Order />} />
 			</Routes>
 		</BrowserRouter>

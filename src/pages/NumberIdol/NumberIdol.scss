@@ -1,0 +1,21 @@
+.style-home-idol {
+	background: url('../../image/thansohoc.png');
+	background-size: cover;
+	.select-date {
+		.ant-select-selector {
+			height: 100%;
+			border-radius: 12px;
+		}
+	}
+	.button-submit {
+		width: 404px;
+		height: 52px;
+		border-radius: 24px;
+	}
+	.select-time {
+		.ant-select-selector {
+			height: 52px;
+			border-radius: 12px;
+		}
+	}
+}

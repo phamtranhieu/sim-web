@@ -13,7 +13,8 @@ module.exports = {
 			'white-mini': 'rgba(255, 255, 255, 0.6)',
 			white: '#FFFFFF',
 			'border-white': '#E6E8EC',
-			home: 'rgba(0,0,0,0.6)',
+			home: 'rgba(0,0,0,0.4)',
+			order: 'rgba(0,0,0,0.6)',
 		}),
 		borderRadius: {
 			none: '0',

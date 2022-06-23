@@ -1,0 +1,47 @@
+.style-home {
+	background-image: url('../../imageAuth/Screen Shot 2022-06-08 at 16.40 2.png');
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.6);
+	.select-date {
+		.ant-select-selector {
+			height: 100%;
+			border-radius: 12px;
+		}
+	}
+	.button-submit {
+		width: 404px;
+		height: 52px;
+		border-radius: 24px;
+	}
+	.select-time {
+		.ant-select-selector {
+			height: 52px;
+			border-radius: 12px;
+		}
+	}
+	// .logo {
+	// 	align-items: none;
+	// }
+	// .item-data {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	background: rgba(0, 0, 0, 0.6);
+	// 	width: 376px;
+	// 	height: 72px;
+	// 	margin-top: 24px;
+	// 	border-radius: 20px;
+	// 	.icon {
+	// 		width: 100px;
+	// 		height: 100px;
+	// 	}
+	// 	p {
+	// 		font-style: normal;
+	// 		font-weight: 600;
+	// 		font-size: 18px;
+	// 		color: #ffffff;
+	// 	}
+	// 	.button-arrow {
+	// 		float: right;
+	// 	}
+	// }
+}
