@@ -1,0 +1,58 @@
+export const data = [
+	{
+		teleNumber: '089 1000232',
+		price: 60000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 70000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 80000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 80000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 90000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 20000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 650000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+	{
+		teleNumber: '089 1000232',
+		price: 670000000,
+		discountPrice: 20000000,
+		point: '8.5',
+		text: 'SIM vận khí tốt cho gia chủ',
+	},
+];

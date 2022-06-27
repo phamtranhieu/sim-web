@@ -128,7 +128,7 @@ export default function Onboarding() {
 					<Modal
 						width="972px"
 						// bodyStyle={{ height: '740px' }}
-						bodyStyle={{ height: '740px', overflowY: 'scroll' }}
+						bodyStyle={{ height: '740px' }}
 						visible={isModalVisible}
 						onOk={handleOk}
 						onCancel={handleCancel}
@@ -160,33 +160,6 @@ export default function Onboarding() {
 							giá có lúc rơi xuống mức thấp nhất là 18.261 USD/đồng, và tăng lên ngưỡng cao 20.800
 							USD/đồng. Cuối tuần trước, đà bán tháo khiến giá Bitcoin giảm mạnh còn 17.601 USD/đồng. Dù
 							đã phục hồi phần nào, giá Bitcoin vẫn thấp hơn khoảng 70% so với mức cao kỷ lục được thiết
-							lập hồi tháng 11/2021 và giảm 57% trong năm nay. Theo dữ liệu của CoinMarketCap, giá Bitcoin
-							tăng mạnh trong ngày 20/6 (theo giờ Việt Nam) sau đợt bán tháo mạnh vào cuối tuần. Tính đến
-							17h, đồng tiền mã hóa lớn nhất thế giới được giao dịch quanh ngưỡng 20.500 USD/đồng, tăng
-							8,6% so với 24 giờ trước đó. Trong 24 giờ qua, giá có lúc rơi xuống mức thấp nhất là 18.261
-							USD/đồng, và tăng lên ngưỡng cao 20.800 USD/đồng. Cuối tuần trước, đà bán tháo khiến giá
-							Bitcoin giảm mạnh còn 17.601 USD/đồng. Dù đã phục hồi phần nào, giá Bitcoin vẫn thấp hơn
-							khoảng 70% so với mức cao kỷ lục được thiết lập hồi tháng 11/2021 và giảm 57% trong năm nay.
-							Theo dữ liệu của CoinMarketCap, giá Bitcoin tăng mạnh trong ngày 20/6 (theo giờ Việt Nam)
-							sau đợt bán tháo mạnh vào cuối tuần. Tính đến 17h, đồng tiền mã hóa lớn nhất thế giới được
-							giao dịch quanh ngưỡng 20.500 USD/đồng, tăng 8,6% so với 24 giờ trước đó. Trong 24 giờ qua,
-							giá có lúc rơi xuống mức thấp nhất là 18.261 USD/đồng, và tăng lên ngưỡng cao 20.800
-							USD/đồng. Cuối tuần trước, đà bán tháo khiến giá Bitcoin giảm mạnh còn 17.601 USD/đồng. Dù
-							đã phục hồi phần nào, giá Bitcoin vẫn thấp hơn khoảng 70% so với mức cao kỷ lục được thiết
-							lập hồi tháng 11/2021 và giảm 57% trong năm nay. Theo dữ liệu của CoinMarketCap, giá Bitcoin
-							tăng mạnh trong ngày 20/6 (theo giờ Việt Nam) sau đợt bán tháo mạnh vào cuối tuần. Tính đến
-							17h, đồng tiền mã hóa lớn nhất thế giới được giao dịch quanh ngưỡng 20.500 USD/đồng, tăng
-							8,6% so với 24 giờ trước đó. Trong 24 giờ qua, giá có lúc rơi xuống mức thấp nhất là 18.261
-							USD/đồng, và tăng lên ngưỡng cao 20.800 USD/đồng. Cuối tuần trước, đà bán tháo khiến giá
-							Bitcoin giảm mạnh còn 17.601 USD/đồng. Dù đã phục hồi phần nào, giá Bitcoin vẫn thấp hơn
-							khoảng 70% so với mức cao kỷ lục được thiết lập hồi tháng 11/2021 và giảm 57% trong năm nay.
-							Theo dữ liệu của CoinMarketCap, giá Bitcoin tăng mạnh trong ngày 20/6 (theo giờ Việt Nam)
-							sau đợt bán tháo mạnh vào cuối tuần. Tính đến 17h, đồng tiền mã hóa lớn nhất thế giới được
-							giao dịch quanh ngưỡng 20.500 USD/đồng, tăng 8,6% so với 24 giờ trước đó. Trong 24 giờ qua,
-							giá có lúc rơi xuống mức thấp nhất là 18.261 USD/đồng, và tăng lên ngưỡng cao 20.800
-							USD/đồng. Cuối tuần trước, đà bán tháo khiến giá Bitcoin giảm mạnh còn 17.601 USD/đồng. Dù
-							đã phục hồi phần nào, giá Bitcoin vẫn thấp hơn khoảng 70% so với mức cao kỷ lục được thiết
-							lập hồi tháng 11/2021 và giảm 57% trong năm nay.
 						</p>
 					</Modal>
 				</div>

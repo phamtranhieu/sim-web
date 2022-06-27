@@ -5,10 +5,12 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 const { Option } = Select;
 import type { Moment } from 'moment';
 import moment from 'moment';
+import { useNavigate } from 'react-router-dom';
 
 import { month, gender, time } from './OrderData';
 
 export default function Home() {
+	const navigate = useNavigate();
 	// const [isModalVisible, setIsModalVisible] = useState(false);
 	// useEffect(() => {
 	// 	showModal();
@@ -270,7 +272,15 @@ export default function Home() {
 									colon={false}
 									style={{ width: '404px', height: '52px', borderRadius: '24px' }}
 								>
-									<Button className="button-submit" type="primary" danger htmlType="submit">
+									<Button
+										className="button-submit"
+										type="primary"
+										danger
+										htmlType="submit"
+										onClick={() => {
+											navigate('/choose/step1');
+										}}
+									>
 										Tiếp tục
 									</Button>
 								</Form.Item>

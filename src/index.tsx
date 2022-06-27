@@ -17,7 +17,12 @@ import ResetPassword from './pages/ResetPassword/ResetPassword';
 import ConfirmPassword from './pages/ResetPassword/ConfirmPassword';
 import SetPassword from './pages/ResetPassword/SetPassword';
 import Home from './pages/Home/Home';
+
 import Order from './pages/Order/Order';
+import Choose from './pages/Choose/Choose';
+import Choose1 from './pages/Choose/Choose1/Choose1';
+import Choose2 from './pages/Choose/Choose2/Choose2';
+import Choose3 from './pages/Choose/Choose3/Choose3';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -41,6 +46,17 @@ root.render(
 				<Route path="/home" element={<Home />} />
 
 				<Route path="/order" element={<Order />} />
+
+				<Route path="/choose" element={<Choose />}>
+					<Route path="step1" element={<Choose1 />} />
+					<Route path="step2" element={<Choose2 />} />
+					<Route path="step3" element={<Choose3 />} />
+				</Route>
+
+				{/* <Route path="/choose" element={<Choose />}>
+					<Route key="0" path="step1" element={<Choose1 />} />
+					<Route key="1" path="step2" element={<Choose2 />} />
+				</Route> */}
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
