@@ -12,6 +12,7 @@ import SilderFan from './SliderFan/SilderFan';
 import './Fan.scss';
 
 export default function Fan() {
+	const navigate = useNavigate();
 	return (
 		<div>
 			<div className="w-[1440px] h-[900px] mx-auto style-home-fan flex flex-col items-center relative">
@@ -125,6 +126,7 @@ export default function Fan() {
 																// 	height: '52px',
 																// 	borderRadius: '12px',
 																// }}
+																key={index}
 																value={item.value}
 															>
 																{item.title}
@@ -175,7 +177,15 @@ export default function Fan() {
 									colon={false}
 									style={{ width: '404px', height: '52px', borderRadius: '24px' }}
 								>
-									<Button className="button-submit" type="primary" danger htmlType="submit">
+									<Button
+										className="button-submit"
+										type="primary"
+										danger
+										htmlType="submit"
+										onClick={() => {
+											navigate('/main/?type=fan');
+										}}
+									>
 										Tiếp tục
 									</Button>
 								</Form.Item>

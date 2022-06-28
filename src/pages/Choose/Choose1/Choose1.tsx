@@ -1,14 +1,16 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { data } from './ChooseData';
 import action from '../../../image/Action.png';
-import { Checkbox, Radio, Modal } from 'antd';
+import { Checkbox, Radio, Modal, Button } from 'antd';
 import './Choose1';
 import UI from '../../../image/UI.png';
+import datmua from '../../../image/datmua.png';
 import Group from '../../../image/Group.png';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 export default function Choose1() {
 	const [isModalVisible, setIsModalVisible] = useState(false);
-
+	const navigate = useNavigate();
 	useEffect(() => {
 		showModal();
 	}, []);
@@ -24,12 +26,23 @@ export default function Choose1() {
 	const handleCancel = () => {
 		setIsModalVisible(false);
 	};
+
+	const handleClick = () => {
+		navigate('/choose/step2');
+	};
 	return (
 		<>
 			<div className="flex w-[1440px] px-[90px] justify-between mt-[24px]">
 				<div>
 					<div className="flex items-center w-[318px] h-[36px] mb-[18px]">
-						<img className="w-[30px] h-[30px]" src={UI} alt="" />
+						<img
+							className="w-[30px] h-[30px] cursor-pointer"
+							src={UI}
+							alt=""
+							onClick={() => {
+								handleClick();
+							}}
+						/>
 						<h2 className="w-[274px] h-[36px] text-[24px] font-semibold mb-0 ml-[11px]  ">
 							Số thăng quan tiến chức
 						</h2>
@@ -60,7 +73,7 @@ export default function Choose1() {
 														{item.teleNumber}
 													</p>
 												</div>
-												<p className="w-[88px] h-[26px]  text-[16px] text-semibold mb-0">
+												<p className="w-[88px] h-[26px]  text-[16px] text-semibold mb-0 line-through">
 													{newValuePrice}đ
 												</p>
 												<p className="w-[94px] h-[24px] tracking-tighter  font-semibold text-[16px] text-[#242424] mb-0">
@@ -121,10 +134,10 @@ export default function Choose1() {
 														{item.teleNumber}
 													</p>
 												</div>
-												<p className="w-[88px] h-[26px]  text-[16px] text-semibold mb-0">
+												<p className="w-[88px] h-[26px]  text-[16px] text-semibold mb-0 line-through">
 													{newValuePrice}đ
 												</p>
-												<p className="w-[94px] h-[24px] font-semibold text-[16px] text-[#242424] mb-0">
+												<p className="w-[94px] h-[24px] font-semibold text-[16px] text-[#242424] mb-0 ">
 													{newValueDiscount}đ
 												</p>
 											</div>
@@ -168,6 +181,7 @@ export default function Choose1() {
 							</div>
 						</div>
 					</div>
+					<img src={datmua} alt="" className="mx-auto mt-[30px] disabled:" />
 				</div>
 				<div className="w-[358px] h-[100px]">
 					<h2 className="w-[103px] h-[34px] text-[24px] text-[#242D35] font-semibold mb-[20px]">Luận giải</h2>
@@ -209,6 +223,9 @@ export default function Choose1() {
 						<span className="text-[14px] font-medium"> 68*99</span>
 					</li>
 				</ul>
+				<div className="choose-number w-[488px] h-[48px] bg-[#FF4B5A] flex items-center justify-center text-white text-[18px] font-semibold rounded-lg">
+					Bắt đầu chọn số
+				</div>
 			</Modal>
 		</>
 	);

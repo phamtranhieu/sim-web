@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Button, Modal, Form, Input, Space, Select, Radio, TimePicker } from 'antd';
 const { Option } = Select;
 import '../../pages/NumberIdol/NumberIdol';
@@ -12,6 +12,9 @@ import arrow from '../../asset/arrow.svg';
 
 export default function NumberIdol() {
 	const [isModalVisible, setIsModalVisible] = useState(false);
+	const [searchParams, setSearchParams] = useSearchParams();
+	const a = searchParams.get('type');
+	console.log(a);
 	const navigate = useNavigate();
 	useEffect(() => {
 		showModal();
@@ -156,6 +159,7 @@ export default function NumberIdol() {
 																	// 	height: '52px',
 																	// 	borderRadius: '12px',
 																	// }}
+																	key={index}
 																	value={item.value}
 																>
 																	{item.title}
@@ -206,7 +210,15 @@ export default function NumberIdol() {
 										colon={false}
 										style={{ width: '404px', height: '52px', borderRadius: '24px' }}
 									>
-										<Button className="button-submit" type="primary" danger htmlType="submit">
+										<Button
+											className="button-submit"
+											type="primary"
+											danger
+											htmlType="submit"
+											onClick={() => {
+												navigate('/number-idol/decode');
+											}}
+										>
 											Tiếp tục
 										</Button>
 									</Form.Item>

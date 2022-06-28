@@ -30,6 +30,7 @@ export default function SilderFan() {
 					return (
 						<>
 							<SwiperSlide
+								key={index}
 								className="relative"
 								style={{ backgroundColor: item.color, borderRadius: '40px' }}
 							>

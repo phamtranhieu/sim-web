@@ -38,7 +38,7 @@ export default function Slider() {
 				{dataSlider.map((item, index) => {
 					return (
 						<>
-							<SwiperSlide>
+							<SwiperSlide key={index}>
 								<div className="w-full h-[560px] p-10 relative">
 									<p
 										style={{ cursor: 'pointer', fontSize: '24px' }}

@@ -112,7 +112,15 @@ export default function Class() {
 										colon={false}
 										style={{ width: '404px', height: '52px', borderRadius: '24px' }}
 									>
-										<Button className="button-submit" type="primary" danger htmlType="submit">
+										<Button
+											className="button-submit"
+											type="primary"
+											danger
+											htmlType="submit"
+											onClick={() => {
+												navigate('/main/?type=class');
+											}}
+										>
 											Tiếp tục
 										</Button>
 									</Form.Item>

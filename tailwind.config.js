@@ -67,8 +67,11 @@ module.exports = {
 			extrabold: '800',
 			black: '900',
 		},
+
 		// backgroundImage: {
-		// 	home: "url('./src/imageAuth/Screen Shot 2022-06-08 at 16.40 2.png')",
+		// 	idol: "url('./src/image/new.jpg')",
+		// 	class: "url('./src/image/classidol.jpg')",
+		// 	fan: "url('./src/image/fanidol.jpg')",
 		// },
 	},
 	plugins: [],

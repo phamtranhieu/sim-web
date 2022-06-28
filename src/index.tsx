@@ -9,6 +9,7 @@ import Onboarding from './pages/Onboarding/Onboarding';
 import Fan from './pages/Fan/Fan';
 import Class from './pages/Class/Class';
 import NumberIdol from './pages/NumberIdol/NumberIdol';
+import Decode from './pages/NumberIdol/Decode/Decode';
 
 import Authenticate from './pages/Authenticate/Authenticate';
 import Register from './pages/Register/Register';
@@ -19,6 +20,8 @@ import SetPassword from './pages/ResetPassword/SetPassword';
 import Home from './pages/Home/Home';
 
 import Order from './pages/Order/Order';
+import Main from './pages/Main/Main';
+
 import Choose from './pages/Choose/Choose';
 import Choose1 from './pages/Choose/Choose1/Choose1';
 import Choose2 from './pages/Choose/Choose2/Choose2';
@@ -32,6 +35,7 @@ root.render(
 				<Route index element={<Onboarding />} />
 
 				<Route path="/number-idol" element={<NumberIdol />} />
+				<Route path="/number-idol/decode" element={<Decode />} />
 				<Route path="/fan" element={<Fan />} />
 				<Route path="/class" element={<Class />} />
 
@@ -53,10 +57,7 @@ root.render(
 					<Route path="step3" element={<Choose3 />} />
 				</Route>
 
-				{/* <Route path="/choose" element={<Choose />}>
-					<Route key="0" path="step1" element={<Choose1 />} />
-					<Route key="1" path="step2" element={<Choose2 />} />
-				</Route> */}
+				<Route path="/main" element={<Main />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
