@@ -9,7 +9,7 @@ export default function Authenticate() {
 	const navigate = useNavigate();
 	return (
 		// <div className=" bg-[#E5E5E5]">
-		<div className="w-[1440px] h-[900px] mx-auto flex items-center ">
+		<div className="w-[1440px] h-[100vh] mx-auto flex items-center ">
 			<img
 				className="w-[762px] h-[900px]"
 				src={require('../../imageAuth/Screen Shot 2022-06-08 at 16.40 2 (1).png')}
@@ -74,7 +74,7 @@ export default function Authenticate() {
 								danger
 								htmlType="submit"
 								onClick={() => {
-									navigate('/home');
+									navigate('/choose-package');
 								}}
 							>
 								Đăng nhập

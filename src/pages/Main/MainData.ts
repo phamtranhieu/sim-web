@@ -286,6 +286,7 @@ export const content = [
 	{
 		type: 'fan',
 		title: 'Sơn Tùng M-TP',
+		specific: 'Mã số cộng đồng',
 		title2: '"Bộ phận pháp lý của Barcelona đang nghiên cứu để có thể kiện Roma vì những thiệt hại đội bóng này gây ra cho chúng tôi và người hâm mộ", The Athletic dẫn lại thông báo của Barcelona.',
 	},
 	{

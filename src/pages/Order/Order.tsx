@@ -36,7 +36,7 @@ export default function Home() {
 	};
 	return (
 		<>
-			<div className="w-[1440px] h-[900px] mx-auto style-home flex flex-col items-center py-[128px]">
+			<div className="w-[1440px] h-[100vh] mx-auto style-home flex flex-col items-center py-[128px]">
 				<div className="w-[full] h-[full] bg-home mx-auto flex flex-col items-center">
 					<div className="w-[500px] h-[644px] bg-order">
 						<div className="w-[404px] m-auto py-[50px]">

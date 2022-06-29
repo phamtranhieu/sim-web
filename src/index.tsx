@@ -22,6 +22,8 @@ import Home from './pages/Home/Home';
 import Order from './pages/Order/Order';
 import Main from './pages/Main/Main';
 
+import ChoosePackage from './pages/ChoosePackage/ChoosePackage';
+
 import Choose from './pages/Choose/Choose';
 import Choose1 from './pages/Choose/Choose1/Choose1';
 import Choose2 from './pages/Choose/Choose2/Choose2';
@@ -48,6 +50,7 @@ root.render(
 				</Route>
 
 				<Route path="/home" element={<Home />} />
+				<Route path="/choose-package" element={<ChoosePackage />} />
 
 				<Route path="/order" element={<Order />} />
 

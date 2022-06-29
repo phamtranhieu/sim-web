@@ -28,7 +28,7 @@ export default function Home() {
 	};
 	return (
 		<>
-			<div className="w-[1440px] h-[900px] mx-auto style-home flex flex-col items-center">
+			<div className="w-[1440px] h-[100vh] mx-auto style-home flex flex-col items-center">
 				<div className="w-full h-full bg-home mx-auto flex flex-col items-center">
 					<div className="w-[1440px] h-[56px] absolute">
 						<img src={arrow} alt="" className="relative top-[24px] left-[66px]" />

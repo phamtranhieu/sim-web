@@ -15,7 +15,7 @@ export default function Fan() {
 	const navigate = useNavigate();
 	return (
 		<div>
-			<div className="w-[1440px] h-[900px] mx-auto style-home-fan flex flex-col items-center relative">
+			<div className="w-[1440px] h-[100vh] mx-auto style-home-fan flex flex-col items-center relative">
 				<div className="header w-[1440px] h-[56px] flex items-center justify-center ">
 					<img src={arrow} className="absolute left-[40px]" />
 					<img src={logo} className="w-[116px] h-[32px] flex items-center" />
