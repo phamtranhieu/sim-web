@@ -74,7 +74,7 @@ export default function Authenticate() {
 								danger
 								htmlType="submit"
 								onClick={() => {
-									navigate('/choose-package');
+									navigate('/choose-package?action=Step1');
 								}}
 							>
 								Đăng nhập

@@ -23,6 +23,11 @@ import Order from './pages/Order/Order';
 import Main from './pages/Main/Main';
 
 import ChoosePackage from './pages/ChoosePackage/ChoosePackage';
+import Step1 from './pages/ChoosePackage/Step1/Step1';
+import Step2 from './pages/ChoosePackage/Step2/Step2';
+import Step3 from './pages/ChoosePackage/Step3/Step3';
+import Step4 from './pages/ChoosePackage/Step4/Step4';
+import Step5 from './pages/ChoosePackage/Step5/Step5';
 
 import Choose from './pages/Choose/Choose';
 import Choose1 from './pages/Choose/Choose1/Choose1';

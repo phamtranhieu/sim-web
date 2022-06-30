@@ -11,9 +11,11 @@ import logo from '../../asset/logo.svg';
 import arrow from '../../asset/arrow.svg';
 import search from '../../asset/search.svg';
 import muiten from '../../icon/muiten.svg';
+import tamgiac from '../../image/Polygon 1.png';
 
 import './Main.scss';
 import classNames from 'classnames';
+
 import { content, dataNumber } from './MainData';
 
 export default function Main() {
@@ -49,9 +51,9 @@ export default function Main() {
 	};
 
 	return (
-		<>
-			<div className="">
-				<div className="border-1-[#E9EDF7] w-[1440px] h-[100vh] mx-auto">
+		<div className="">
+			<div className="out-bg" style={{ backgroundColor: '#E5E5E5' }}>
+				<div className="border-1-[#E9EDF7] w-[1440px] h-[100vh] bg-white mx-auto">
 					<div
 						className={classNames('header-main w-[1440px] h-[386px] mx-auto relative', {
 							'bg-idol': typePage == 'idol',
@@ -72,7 +74,7 @@ export default function Main() {
 						</div>
 					</div>
 					<div className="w-[1170px] h-[600px] mx-auto flex">
-						<div className="left mt-[36px] mb-[32px]">
+						<div className="left  mb-[32px]" style={{ paddingTop: '70px' }}>
 							{content
 								.filter(item => {
 									return item.type == typePage;
@@ -98,14 +100,41 @@ export default function Main() {
 									);
 								})}
 						</div>
-						<div className="right ml-[25px] mt-[40px] overflow-y-auto">
-							<div className="flex items-center">
+						<div className="right ml-[25px] " style={{ paddingTop: '70px' }}>
+							<div className="flex items-center relative item-dad">
 								<img className="w-[25px] h-[25px] mr-[13.5px]" src={UI} />
+
+								<div className="w-[296px] h-[40px] bg-[#131313] rounded-md flex absolute top-[-40px] item-child">
+									<p
+										className="text-white w-[272px] h-[24px] mx-auto my-auto  text-center items-center"
+										onClick={() => {
+											showModal();
+										}}
+									>
+										Nhấn vào đây để xem lại cách tìm số
+									</p>
+									<img
+										src={tamgiac}
+										alt=""
+										className="absolute w-[24px] h-[20px] top-[32px] left-[47px]"
+									/>
+								</div>
+								{/* <div> */}
 								<h1 className="w-[152px] h-[36px] font-semibold text-[24px] text-[#242D35] ">
 									Danh sách số
 								</h1>
+								<div
+									className="flex bg-[#FF4B5A] w-[572px] h-[48px] rounded-lg items-center ml-[104px] relative"
+									style={{ visibility: arrayLength > 1 ? 'hidden' : 'visible' }}
+								>
+									<img src={UI} className="w-[16px] h-[16px] absolute left-[17px]" />
+									<p className="w-[524px] h-[22px] text-[14px] font-semibold m-auto text-center text-white text-[14px] text-semibold">
+										Bạn chưa chọn đủ số lượng tối thiểu (2 số). Vui lòng chọn thêm số để tiếp tục.
+									</p>
+								</div>
+								{/* </div> */}
 							</div>
-							<div className="flex w-[840px] h-[524px] mt-[34px]">
+							<div className="flex w-[870px] h-[524px] mt-[34px] overflow-y-auto">
 								<div className="w-[392px] h-[524px] mr-[50px]">
 									<div className="flex w-[388px] h-[26px] justify-around border-b-[1px] border-[#898989] mb-[26px]">
 										<p className="w-[95px] h-[22px] font-semibold text-[14px] text-[#898989] mb-0">
@@ -195,7 +224,7 @@ export default function Main() {
 							</div>
 						</div>
 					</div>
-					<div aria-disabled className="reservation relative">
+					<div aria-disabled className="reservation relative mt-[83px]">
 						{/* <span className="text-white font-semibold">Đặt mua</span> */}
 						<Button
 							style={{
@@ -260,6 +289,6 @@ export default function Main() {
 					Bắt đầu chọn số
 				</div>
 			</Modal>
-		</>
+		</div>
 	);
 }
