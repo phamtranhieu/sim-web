@@ -71,27 +71,30 @@ export const listNumber = [
 
 export const packageNumber = [
 	{
-		'name-package': '6A68',
+		namePackage: '6A68',
 		data: '5GB / NGÀY',
 		inline: '1.000 PHÚT',
 		date: '30 NGÀY',
 		auto: 'CÓ',
 		money: '99.000 VNĐ',
+		bgStatus: '#565656',
 	},
 	{
-		'name-package': '12A89S',
+		namePackage: '12A89S',
 		data: '10GB / NGÀY',
 		inline: '2.000 PHÚT',
 		date: '60 NGÀY',
 		auto: 'CÓ',
 		money: '1.000.000 VNĐ',
+		bgStatus: '#3B82F6',
 	},
 	{
-		'name-package': '12A99S',
+		namePackage: '12A99S',
 		data: '15GB / NGÀY',
 		inline: '3.000 PHÚT',
 		date: '90 NGÀY',
 		auto: 'CÓ',
 		money: '2.000.000 VNĐ',
+		bgStatus: '#EF4444',
 	},
 ];

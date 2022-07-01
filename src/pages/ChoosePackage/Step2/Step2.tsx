@@ -2,32 +2,27 @@ import React, { useState } from 'react';
 import family from '../../../image/family.png';
 import { listNumber, packageNumber } from './StepData2';
 import { Button, Modal } from 'antd';
+import { useNavigate } from 'react-router-dom';
+
 import Popup from './Popup';
 
 export default function Step2() {
 	const [isModalVisible, setIsModalVisible] = useState(false);
 	const [data, setData] = useState({});
-
+	const navigate = useNavigate();
 	const showModal = () => {
 		setIsModalVisible(true);
 	};
+	console.log(isModalVisible);
 
-	// const handleOk = () => {
-	// 	setIsModalVisible(false);
-	// };
-
-	// const handleCancel = () => {
-	// 	setIsModalVisible(false);
-	// };
-	const newFunction = (data: any) => {
-		console.log(data);
+	const handleCancel = () => {
+		setIsModalVisible(false);
 	};
+
 	const handleChoose = (itemFunction: any, itemStatus: string) => {
-		console.log(itemFunction);
-		console.log(itemStatus);
 		packageNumber
 			.filter(item => {
-				return item['name-package'] == itemStatus;
+				return item['namePackage'] == itemStatus;
 			})
 			.map((item, index) => {
 				setData(item);
@@ -35,6 +30,8 @@ export default function Step2() {
 
 		if (itemFunction == 'Xem chi tiết') {
 			showModal();
+		} else {
+			navigate('/number-more');
 		}
 	};
 
@@ -91,7 +88,7 @@ export default function Step2() {
 					</div>
 				</div>
 			</div>
-			<Popup isModalVisible newFunction />
+			<Popup isModalVisible={isModalVisible} handleCancel={handleCancel} data={data} />
 		</>
 	);
 }

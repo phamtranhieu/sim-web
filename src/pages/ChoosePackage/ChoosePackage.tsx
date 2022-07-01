@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import button from '../../image/arrow - 1-left.png';
-import UI from '../../image/UI.png';
 import logo from '../../image/logo - type - head.png';
+import UI from '../../image/UI.png';
+
 import { Steps, Button, message } from 'antd';
 import Step1 from './Step1/Step1';
 import Step2 from './Step2/Step2';

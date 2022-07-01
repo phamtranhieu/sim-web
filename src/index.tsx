@@ -25,6 +25,8 @@ import Main from './pages/Main/Main';
 import ChoosePackage from './pages/ChoosePackage/ChoosePackage';
 import Step1 from './pages/ChoosePackage/Step1/Step1';
 import Step2 from './pages/ChoosePackage/Step2/Step2';
+import NumberMore from './pages/NumberMore/NumberMore';
+
 import Step3 from './pages/ChoosePackage/Step3/Step3';
 import Step4 from './pages/ChoosePackage/Step4/Step4';
 import Step5 from './pages/ChoosePackage/Step5/Step5';
@@ -55,6 +57,7 @@ root.render(
 				</Route>
 
 				<Route path="/home" element={<Home />} />
+
 				<Route path="/choose-package" element={<ChoosePackage />} />
 
 				<Route path="/order" element={<Order />} />
@@ -66,6 +69,7 @@ root.render(
 				</Route>
 
 				<Route path="/main" element={<Main />} />
+				<Route path="/number-more" element={<NumberMore />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
