@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from '../src/app/store';
 
 import Onboarding from './pages/Onboarding/Onboarding';
 import Fan from './pages/Fan/Fan';
@@ -39,39 +41,41 @@ import Choose3 from './pages/Choose/Choose3/Choose3';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<Routes>
-				<Route index element={<Onboarding />} />
+		<Provider store={store}>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<Onboarding />} />
 
-				<Route path="/number-idol" element={<NumberIdol />} />
-				<Route path="/number-idol/decode" element={<Decode />} />
-				<Route path="/fan" element={<Fan />} />
-				<Route path="/class" element={<Class />} />
+					<Route path="/number-idol" element={<NumberIdol />} />
+					<Route path="/number-idol/decode" element={<Decode />} />
+					<Route path="/fan" element={<Fan />} />
+					<Route path="/class" element={<Class />} />
 
-				<Route path="/login" element={<Authenticate />} />
-				<Route path="/register" element={<Register />} />
-				<Route path="/confirm-register" element={<ConfirmRegister />} />
-				<Route path="/reset-password" element={<ResetPassword />}>
-					<Route path="set" element={<SetPassword />} />
-					<Route path="confirm" element={<ConfirmPassword />} />
-				</Route>
+					<Route path="/login" element={<Authenticate />} />
+					<Route path="/register" element={<Register />} />
+					<Route path="/confirm-register" element={<ConfirmRegister />} />
+					<Route path="/reset-password" element={<ResetPassword />}>
+						<Route path="set" element={<SetPassword />} />
+						<Route path="confirm" element={<ConfirmPassword />} />
+					</Route>
 
-				<Route path="/home" element={<Home />} />
+					<Route path="/home" element={<Home />} />
 
-				<Route path="/choose-package" element={<ChoosePackage />} />
+					<Route path="/choose-package" element={<ChoosePackage />} />
 
-				<Route path="/order" element={<Order />} />
+					<Route path="/order" element={<Order />} />
 
-				<Route path="/choose" element={<Choose />}>
-					<Route path="step1" element={<Choose1 />} />
-					<Route path="step2" element={<Choose2 />} />
-					<Route path="step3" element={<Choose3 />} />
-				</Route>
+					<Route path="/choose" element={<Choose />}>
+						<Route path="step1" element={<Choose1 />} />
+						<Route path="step2" element={<Choose2 />} />
+						<Route path="step3" element={<Choose3 />} />
+					</Route>
 
-				<Route path="/main" element={<Main />} />
-				<Route path="/number-more" element={<NumberMore />} />
-			</Routes>
-		</BrowserRouter>
+					<Route path="/main" element={<Main />} />
+					<Route path="/number-more" element={<NumberMore />} />
+				</Routes>
+			</BrowserRouter>
+		</Provider>
 	</React.StrictMode>,
 );
 
